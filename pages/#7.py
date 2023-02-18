@@ -1,0 +1,20 @@
+import streamlit as sl
+
+sl.subheader("7. P(A′∩ B) = 2/5, P(A|B) = 3/7, and P(A'| B') = 2/3.")
+
+sl.subheader("(a) Are A and B mutually exclusive?")
+sl.subheader("$$P(A \cap B) \\neq\ 0$$, because $$P(A|B) \\neq\ 0$$")
+sl.subheader("$$P(A|B) = \dfrac{P(A \cap B)}{P(B)} $$")
+sl.subheader("(b) Are A and B independent?")
+sl.subheader("$$P(A|B) = \dfrac{3}{7} \\neq\ P(A)$$")
+sl.subheader("Therefore, A and B are dependent")
+sl.subheader("(c) $$P(A' \cup B') = 1 - P(A \cap B) = 1 - P(B)*P(A|B) = 1 -0.7 * 3/7 = 0.7$$")
+sl.subheader("(d) $$P(B|A) = \dfrac{P(A \cap B)}{P(A)} = \dfrac{0.7 * \dfrac{3}{7}}{0.4} = 0.75 $$")
+sl.subheader("(e) $$P(A \cap B|B') = 0$$")
+sl.subheader("_______________________________________________________")
+sl.subheader("$$P(A' \cap B) = P(B) * P(A'|B) = P(B) * (1 - P(A|B)$$")
+sl.subheader("$$P(B) = \dfrac{P(A \cap B)}{1 - P(A|B)} = \dfrac{2/5}{(1 - 3/7)} = 0.7$$")
+sl.subheader("$$P(B') = 1 - P(B) = 1 - 0.7 = 0.3 $$")
+sl.subheader("$$P(A'|B') = \dfrac{P(A' \cap B')}{P(B')}$$ therefore, $$P(A' \cap B') = 0.2 $$")
+sl.subheader("$$P(A') = P((A' \cap B) \cup (A' \cap B')) = P(A' \cap B) + P(A' \cap B') = 2/5 + 2/10 = 0.6 $$")
+sl.subheader("$$P(A) = 1 - P(A') = 0.4$$")
